@@ -133,6 +133,9 @@ body {
   padding: 16px 10px;
   width: 150px;
 }
+.category-section > div > div > span{
+  display: block;
+}
 .category-section > div > div:nth-child(1) {
   filter: drop-shadow(0 0 8.5px rgba(255, 116, 73, 0.35));
   background-color: #d40000;
@@ -211,7 +214,7 @@ color: #ffffff;
 
 
 /* Responsive Design */
-@media screen and (min-width:461px) {
+@media screen and (min-width:578px) {
   body{
     background: transparent !important
   }
@@ -231,7 +234,7 @@ color: #ffffff;
     padding-bottom: 30px;
 }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 576px) {
   body{
     background-color: #15151e !important;
     width: 100%;
