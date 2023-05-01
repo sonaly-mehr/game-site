@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "PoppinsMedium";
+  src: url("./fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "PoppinsSemibold";
+  src: url("./fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "PoppinsBold";
+  src: url("./fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "GilroyLight";
+  src: url("./fonts/Gilroy-Light.ttf");
+}
+@font-face {
+  font-family: "GilroyBold";
+  src: url("./fonts/Gilroy-Bold.ttf");
+}
+@font-face {
+  font-family: "GilroyMedium";
+  src: url("./fonts/Gilroy-Medium.ttf");
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+h2,
+h4,
+span {
+  font-family: "PoppinsBold";
+}
+h5,
+h6 {
+  font-family: "GilroyBold";
+}
+h4 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 15px;
+  letter-spacing: 0px;
+  margin-bottom: 25px;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+body {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+/* COMMON-CSS */
+.container{
+  background-color: #15151e;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.category-section,
+.featured-section {
+  margin-top: 40px;
+}
+
+.names{
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "GilroyMedium";
+}
+.descp{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.descp span{
+  font-size: 13px;
+  color: #b8b8b8 !important;
+  font-family: "GilroyMedium" !important;
+  margin-top: 3px;
+}
+.icon-text{
+  font-size: 11px !important;
+}
+.icon-text i{
+  margin-right: 3px;
+}
+
+/* HOME-SECTION */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.header-section h2 {
+  font-size: 30px;
+  margin-bottom: -10px;
+}
+.bell-icon{
+  position: relative;
+}
+.bell-icon i{
+  font-size: 22px;
+}
+.yello-dot{
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 4px;
+  background-color: #f5bb00;
+  left: -1px;
+  bottom: 2px;
+}
+
+.category-section > div {
+  display: flex;
+  gap: 10px;
+  /* justify-content: space-between; */
+}
+.category-section > div > div {
+  border-radius: 25px;
+  text-align: center;
+  padding: 16px 10px;
+  width: 150px;
+}
+.category-section > div > div:nth-child(1) {
+  filter: drop-shadow(0 0 8.5px rgba(255, 116, 73, 0.35));
+  background-color: #d40000;
+}
+.category-section > div > div:nth-child(2) {
+  background-color: #67a4ff;
+}
+.category-section > div > div:nth-child(3) {
+  background-color: #ffa500;
+}
+.category-icon1 {
+  width: 60px;
+  height: 60px;
+}
+.category-icon2 {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+.category-icon3 {
+  width: 45px;
+  height: 45px;
+  margin-top: 10px;
+}
+.category-section span {
+  font-size: 14px;
+}
+.featured-section > div:nth-child(1), .my-games-section>div:nth-child(1){
+  display: flex;
+  justify-content: space-between;
+}
+.featured-section span, .my-games-section span{
+  font-size: 13px;
+  color: #65647a;
+  display: block;
+  font-family: "GilroyBold";
+}
+.single-feature{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 18px;
+}
+.single-feature>div:nth-child(1){
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.my-games-section{
+  padding-top: 10px;
+}
+.navbar-menu{
+  background-color: #282a3d;
+  padding: 10px;
+  text-align: center;
+  margin-top: 30px;
+}
+.navbar-menu ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar-menu i{
+  color:#ffffff
+}
+.navbar-menu span{
+  font-size: 10px;
+color: #ffffff;
+  display: block;
+  font-family: "PoppinsMedium";
+}
+.navbar-menu img, .navbar-menu i{
+  width: 25px;
+  height: 25px;
+}
+
+
+/* Responsive Design */
+@media screen and (min-width:461px) {
+  body{
+    background: transparent !important
+  }
+  .container{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    width: 400px;
+    margin: auto;
+    background-color: #15151e;
+  }
+  .navbar-menu{
+    width: 400px;
+    margin: auto;
+    padding: 1px 15px;
+  }
+  .my-games-section {
+    padding-bottom: 30px;
+}
+}
+@media screen and (max-width: 460px) {
+  body{
+    background-color: #15151e !important;
+    width: 100%;
+  }
+  .my-games-section {
+    padding-bottom: 0px !important;
+}
+}
